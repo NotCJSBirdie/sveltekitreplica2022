@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Cards from "./components/Cards";
 import Install from "./components/Install";
@@ -15,10 +14,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <TestHeader />
-      <Hero />
-      <Cards />
+      <div className="z-10 fixed top-0 left-0 right-0 bg-white">
+        <TestHeader />
+      </div>
+
+      <div className="z-50">
+        <Hero />
+      </div>
+
+      <div className="z-20">
+        <Cards />
+      </div>
+
       <Install />
     </div>
   );

@@ -1,0 +1,36 @@
+#underline {
+  display: inline-block;
+  position: relative;
+}
+/* 
+:after (css pseudoelement) is used to put the animation under the element, basicaly we are putting a div under an element (empty element), inline block0 */
+
+#underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #40b3ff;
+  transform-origin: bottom left;
+  transition: transform 0.1s ease-out;
+}
+
+/* this is the fadeout section of the underline animation!!! */
+
+#underline:hover:after {
+  color: #40b3ff;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Creates an animated underline effect when the user hovers over the text.
+
+Use display: inline-block to make the underline span just the width of the text content.
+Use the :after pseudo-element with width: 100% and position: absolute to place it below the content.
+Use transform: scaleX(0) to initially hide the pseudo-element.
+Use the :hover pseudo-class selector to apply transform: scaleX(1) and display the pseudo-element on hover.
+Animate transform using transform-origin: left and an appropriate transition.
+Remove the transform-origin property to make the transform originate from the center of the element. */

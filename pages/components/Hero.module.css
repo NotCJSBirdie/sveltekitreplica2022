@@ -1,3 +1,10 @@
 #backgroundhero {
   background-color: #e0e9f0;
 }
+
+#heroimage {
+  background-image: url("https://kit.svelte.dev/_app/assets/svelte-kit-machine-f9e1f4d5.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1.5);
+}

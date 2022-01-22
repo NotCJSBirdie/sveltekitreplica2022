@@ -3,35 +3,54 @@ import styles from "./Install.module.css";
 const Install = () => {
   return (
     <div>
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Before they sold out
-              <br className="hidden lg:inline-block" />
-              readymade gluten
-            </h1>
-            <p className="mb-8 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+      <section className="text-black body-font md:px-20 px-5 relative bottom-12">
+        <div className="container mx-auto flex justify-end py-5 md:flex-row flex-col items-center">
+          <div className="md:w-1/2 flex flex-col items-start  mb-16 md:mb-0 text-left pr-8">
+            <p className="mb-4 leading-relaxed">
+              SvelteKit is a framework for building web applications of all
+              sizes, with a beautiful development experience and flexible
+              filesystem-based routing.
             </p>
-            <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
-              </button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
+
+            <p className="mb-4 leading-relaxed">
+              Unlike single-page apps, SvelteKit doesn't compromise on SEO,
+              progressive enhancement or the initial load experience — but
+              unlike traditional server-rendered apps, navigation is
+              instantaneous for that app-like feel.
+            </p>
+
+            <p className="mb-4 leading-relaxed text-left">
+              Read the introductory blog post to learn more.
+            </p>
+          </div>
+          <div className="md:w-1/2 w-full">
+            <div
+              id={styles.installbox}
+              className="py-12 px-12 flex flex-col items-start rounded-lg shadow-inner"
+            >
+              <h1 className="mb-2">npm init svelte@next my-app</h1>
+              <h1 className="mb-2">cd my-app</h1>
+              <h1 className="mb-2">npm install</h1>
+              <h1 className="mb-4">npm run dev -- --open</h1>
+              <button
+                id={styles.installbutton}
+                className="text-white flex flex-row justify-between items-center w-1/2 px-4 py-2 rounded-lg"
+              >
+                <div>get started</div>
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
               </button>
             </div>
-          </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="https://dummyimage.com/720x600"
-            />
           </div>
         </div>
       </section>
