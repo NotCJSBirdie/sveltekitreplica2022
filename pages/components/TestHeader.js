@@ -1,6 +1,8 @@
 import useCollapse from "react-collapsed";
 import styles from "./TestHeader.module.css";
 import { useState } from "react";
+import Image from "next/image";
+import SvelteLogo from "../../public/images/sveltepng.png";
 
 const TestHeader = () => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
@@ -12,7 +14,10 @@ const TestHeader = () => {
       <header className="text-gray-600 body-font md:hidden">
         <div className="container mx-auto flex p-5 flex-row items-center justify-between">
           <a className="flex title-font font-medium items-center text-gray-900 md:mb-0">
-            <span className="text-xl">
+            <span className="mr-2">
+              <Image width={30} height={30} src={SvelteLogo} alt="SvelteLogo" />
+            </span>
+            <span className="text-3xl">
               SVELTE
               <span id={styles.brandkit} className="mx-0">
                 KIT
@@ -67,8 +72,11 @@ const TestHeader = () => {
 
       <header className="text-gray-600 body-font md:grid hidden z-50">
         <div className="py-5 container mx-auto grid grid-cols-3 items-center">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <span className="px-8 text-3xl">
+          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
+            <span className="mr-2">
+              <Image width={30} height={30} src={SvelteLogo} alt="SvelteLogo" />
+            </span>
+            <span className="pr-8 text-3xl">
               SVELTE
               <span id={styles.brandkit} className="mx-0">
                 KIT
