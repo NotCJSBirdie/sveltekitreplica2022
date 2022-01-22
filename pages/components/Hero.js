@@ -6,13 +6,16 @@ const Hero = () => {
       className="bg-transparent overflow-visible md:px-24 px-0 pt-12 relative"
       id={styles.backgroundhero}
     >
-      <section className="text-black body-font">
+      <section id={styles.fontfamilyhero} className="text-black body-font">
         <div className="container mx-auto md:flex md:flex-row md:items-center flex flex-col items-center">
           <div className="md:w-1/2 w-full flex flex-col md:items-end md:text-right mb-16 md:mb-0 items-center text-center md:static relative top-24">
             <h1 className="title-font text-7xl md:text-8xl mb-4 font-medium text-gray-900">
-              SVELTEKIT
+              SVELTE
+              <span id={styles.herokit} className="mx-0">
+                KIT
+              </span>
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p id={styles.herokit} className="mb-8 leading-relaxed">
               THE FASTEST WAY TO BUILD SVELTE APPS
             </p>
           </div>

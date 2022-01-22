@@ -8,3 +8,11 @@
   background-repeat: no-repeat;
   transform: scale(1.5);
 }
+
+#herokit {
+  color: #7c818c;
+}
+
+#fontfamilyhero {
+  font-family: "Overpass";
+}

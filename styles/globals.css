@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../public/fonts/Overpass-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url(../public/fonts/FiraMono-Regular.ttf);
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+body {
+  overflow: -moz-scrollbars-none;
+}
+
+body {
+  -ms-overflow-style: none;
+}

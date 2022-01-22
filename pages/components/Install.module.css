@@ -5,3 +5,47 @@
 #installbutton {
   background-color: #ff3e00;
 }
+
+#installbutton:hover {
+  background: none;
+  border-color: #ff3e00;
+  color: #ff3e00;
+  border-width: 2px;
+}
+
+#blog {
+  color: #ff3e00;
+}
+
+#blog {
+  display: inline-block;
+  position: relative;
+}
+
+#blog:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color: #ff3e00;
+  background-color: #ff3e00;
+  transform-origin: bottom left;
+  transition: transform 0.1s ease-out;
+}
+
+#blog:hover:after {
+  color: #ff3e00;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#fontfamilyinstall {
+  font-family: "Overpass";
+}
+
+#fontfamilyinstallcode {
+  font-family: "Fira Mono";
+}
